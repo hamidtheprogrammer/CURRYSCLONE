@@ -11,7 +11,7 @@ const GlobalState = ({ children }) => {
   const fetchProducts = async () => {
     try {
       setLoading(true);
-      const response = await fetch("https://dummyjson.com/products");
+      const response = await fetch("https://dummyjson.com/products?limit=200");
       if (!response.ok) {
         setLoading(false);
         setError("Error: Could not fetch data");
@@ -29,8 +29,11 @@ const GlobalState = ({ children }) => {
 
   useEffect(() => {
     fetchProducts();
-    console.log(products);
   }, []);
+
+  useEffect(() => {
+    console.log(products);
+  }, [products]);
 
   return (
     <GlobalContext.Provider value={{ error, products, loading }}>

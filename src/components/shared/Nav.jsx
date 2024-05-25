@@ -6,7 +6,7 @@ const Nav = () => {
 
   useEffect(() => {
     const sideNavigation = document.querySelector(`.sideNav`);
-    !sideNav
+    sideNav
       ? sideNavigation.classList.add(`active`)
       : sideNavigation.classList.remove(`active`);
   }, [sideNav]);
@@ -39,7 +39,7 @@ const Nav = () => {
         id="hamburger"
         className="relative z-[999] cursor-pointer text-2xl w-[2rem] h-[2rem] md:hidden"
       >
-        {sideNav ? "☰" : "x"}
+        {!sideNav ? "☰" : "x"}
       </div>
       <nav className="sideNav translate-x-[100%] fixed top-0 h-[100vh] z-10 bg-white right-0  md:hidden">
         <NavbarItems

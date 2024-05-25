@@ -34,6 +34,9 @@ body {
   .flxCenter {
     @apply flex justify-center;
   }
+  .itemsCenter {
+    @apply flex items-center;
+  }
 }
 
 .banner {
@@ -50,7 +53,16 @@ body {
   transition: transform 0.5s ease;
 }
 
-.hero_header div {
+.hero_header_slider div {
   display: flex;
   width: 22%;
+}
+
+@media only screen and (min-device-width: 420px) {
+  .hero_header_slider {
+    overflow: hidden;
+  }
+  .hero_header_slider div {
+    width: 100%;
+  }
 }
