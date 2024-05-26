@@ -24,8 +24,8 @@ export const categories = [
     content: "save 50% now on eligible fragrances",
   },
   {
-    name: "skincare",
-    img: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "sports-accessories",
+    img: "https://images.unsplash.com/photo-1580153111806-5007b971dfe7?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     link: "##",
     content: "save 50% now on eligible skincare",
   },
@@ -36,8 +36,8 @@ export const categories = [
     content: "save 50% now on eligible groceries",
   },
   {
-    name: "home-decoration",
-    img: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "kitchen-accessories",
+    img: "https://images.unsplash.com/photo-1556910096-6f5e72db6803?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     link: "##",
     content: "save 50% now on eligible home-decoration",
   },

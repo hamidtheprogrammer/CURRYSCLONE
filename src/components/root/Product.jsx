@@ -8,15 +8,14 @@ const Product = () => {
   const { products, loading, error } = useContext(GlobalContext);
   const [popularProducts, setPopularProducts] = useState([]);
 
-  const test = () =>
-    products?.map((product) => {
-      console.log(product.brand);
-    });
+  // const test = () =>
+  //   products?.map((product) => {
+  //     console.log(product.category);
+  //   });
 
   useEffect(() => {
     const getPopularProducts = () => {
       if (products.length > 20) {
-        test();
         setPopularProducts([]);
         let count = 0;
         while (count < 10) {
@@ -40,7 +39,7 @@ const Product = () => {
       <div className="outerSlider  my-12">
         <ul className="innerSlider flxCenter gap-4">
           {categories.map((category) => (
-            <Link>
+            <Link key={category.name} to={`/product/category/${category.name}`}>
               <li
                 className="itemsCenter flex-col gap-2 cursor-pointer"
                 key={category.name}
@@ -57,7 +56,7 @@ const Product = () => {
         <ul className="innerSlider flxCenter gap-4 ">
           {popularProducts?.length &&
             popularProducts.map((product) => (
-              <Link>
+              <Link key={product.title}>
                 <li
                   className="max-h-[400px] aspect-w-10 aspect-h-15 itemsCenter flex-col gap-2 cursor-pointer bg-black/[0.026] w-[30vw] max-w-[300px] rounded-lg min-w-[200px]"
                   key={product.title}
@@ -80,7 +79,7 @@ const Product = () => {
         <ul className="innerSlider flxCenter gap-4 ">
           {bigBrands?.length &&
             bigBrands.map((brand) => (
-              <Link>
+              <Link key={brand.name}>
                 <li
                   className="max-h-[400px] itemsCenter flex-col gap-2 cursor-pointer bg-black/[0.026] w-[30vw] max-w-[300px] rounded-lg min-w-[200px]"
                   key={brand.name}

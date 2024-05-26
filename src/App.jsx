@@ -9,7 +9,10 @@ const App = () => {
       <Nav />
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/category/:id" element={<Category />}></Route>
+        <Route
+          path="/product/category/:category"
+          element={<Category />}
+        ></Route>
       </Routes>
       <Footer />
     </main>

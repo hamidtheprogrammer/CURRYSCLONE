@@ -15,7 +15,10 @@ const Footer = () => {
     <section className="w-[100%] mt-16">
       <div className="grid grid-cols-3 grid-rows-3 gap-8 text-black/80">
         {footerService.map((service) => (
-          <div className="itemsCenter flex-col cursor-pointer">
+          <div
+            key={service.name}
+            className="itemsCenter flex-col cursor-pointer"
+          >
             <i className="text-2xl">{service.icon}</i>
             <p className="text-sm">{service.name}</p>
           </div>
