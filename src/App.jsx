@@ -1,6 +1,7 @@
 import React from "react";
 import { Home, Nav, Category } from "./constants/Imports";
 import { Routes, Route } from "react-router-dom";
+import Footer from "./components/shared/Footer";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
         <Route path="/" element={<Home />}></Route>
         <Route path="/category/:id" element={<Category />}></Route>
       </Routes>
+      <Footer />
     </main>
   );
 };

@@ -63,3 +63,36 @@ export const bigBrands = [
     content: "save 50% now on eligible Nike products",
   },
 ];
+
+export const footerService = [
+  {
+    name: "Contact Us",
+    icon: "✆",
+    link: "##",
+  },
+  {
+    name: "Track my order",
+    icon: "⛍",
+    link: "##",
+  },
+  {
+    name: "Delivery Options",
+    icon: "⛟",
+    link: "##",
+  },
+  {
+    name: "Order & collect",
+    icon: "⚲",
+    link: "##",
+  },
+  {
+    name: "Price promise",
+    icon: "$",
+    link: "##",
+  },
+  {
+    name: "Returns & Cancellations",
+    icon: "⊖",
+    link: "##",
+  },
+];
