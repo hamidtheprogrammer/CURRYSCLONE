@@ -96,3 +96,30 @@ export const footerService = [
     link: "##",
   },
 ];
+
+export const about = [
+  {
+    isOpen: false,
+    name: "About us",
+    content:
+      "Welcome to TechMart, your one-stop destination for all things tech. We are dedicated to providing you with the latest and greatest in electronics, appliances, and gadgets, with a focus on quality, affordability, and customer satisfaction.",
+  },
+  {
+    isOpen: false,
+    name: "Our Mission",
+    content:
+      "At TechMart, our mission is to make cutting-edge technology accessible to everyone. We believe in empowering our customers by offering a wide range of products that cater to all your tech needs, from the latest smartphones and laptops to essential home appliances and innovative gadgets.",
+  },
+  {
+    isOpen: false,
+    name: "Why Choose Us?",
+    content:
+      "We offer a diverse selection of products from top brands to ensure you find exactly what you’re looking for. Our goal is to provide the best value for your money, offering competitive prices and regular promotions. Our knowledgeable staff is always ready to help you make informed decisions, whether you’re shopping online or in-store. We prioritize your satisfaction with exceptional customer service and hassle-free returns and exchanges. We are committed to environmentally friendly practices, including recycling programs and energy-efficient product offerings.",
+  },
+  {
+    isOpen: false,
+    name: "Our Story",
+    content:
+      "TechMart was founded with the vision of creating a tech haven where everyone can explore and purchase the latest innovations. Over the years, we have grown into a trusted name in the industry, known for our commitment to quality and customer-centric approach. Thank you for choosing TechMart. We look forward to serving you!",
+  },
+];
