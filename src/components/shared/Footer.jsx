@@ -12,8 +12,8 @@ const Footer = () => {
     );
   };
   return (
-    <section className="w-[100%] mt-16">
-      <div className="grid grid-cols-3 grid-rows-3 gap-8 text-black/80">
+    <section className="w-[100%] mt-32 itemsCenter flex-col">
+      <div className="grid grid-cols-3 grid-rows-3 gap-8 text-black/80 max-w-[1000px]">
         {footerService.map((service) => (
           <div
             key={service.name}
@@ -24,7 +24,7 @@ const Footer = () => {
           </div>
         ))}
       </div>
-      <div className=" flex w-[100%] flex-col">
+      <div className=" flex w-[100%] flex-col ">
         {aboutUs.map((abt, idx) => (
           <div
             key={abt.name}

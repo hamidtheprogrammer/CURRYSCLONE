@@ -80,7 +80,11 @@ const Product = () => {
                 className="max-h-[400px] itemsCenter flex-col gap-2 cursor-pointer bg-black/[0.05] w-[30vw] max-w-[300px] rounded-lg min-w-[200px] overflow-hidden"
                 key={brand.name}
               >
-                <img className="relative h-[60%] " src={brand.img} alt="" />
+                <img
+                  className="relative h-[60%] w-[100%]"
+                  src={brand.img}
+                  alt=""
+                />
                 <div className=" p-4">
                   <p className="relative pt-4 text-sm h-[40%] w-[100%] ">
                     {brand.name}
