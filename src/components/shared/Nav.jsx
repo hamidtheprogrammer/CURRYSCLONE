@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import NavbarItems from "./NavbarItems";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   const [sideNav, setSideNav] = useState(false);
@@ -13,12 +14,13 @@ const Nav = () => {
 
   return (
     <header className="wrapper flex justify-between items-center w-[100%] max-sm:px-2 max-sm:py-1 px-6 py-4 relative border-b-[2px] border-gray-300">
-      <div
+      <Link
         id="Logo"
         className="poppins font-bold text-md text-white text-center h-[5rem] w-[5rem] primaryCol flxCenter items-center rounded-[999px]"
+        to={"/"}
       >
         Not Currys
-      </div>
+      </Link>
       <div className="flex items-center w-[40vw] relative">
         <input
           type="text"

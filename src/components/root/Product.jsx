@@ -39,14 +39,13 @@ const Product = () => {
       <div className="outerSlider  my-12">
         <ul className="innerSlider flxCenter gap-4">
           {categories.map((category) => (
-            <Link key={category.name} to={`/product/category/${category.name}`}>
-              <li
-                className="itemsCenter flex-col gap-2 cursor-pointer"
-                key={category.name}
-              >
-                <img className="rounded-md" src={category.img} alt="" />
-                <p className="text-sm">{category.name}</p>
-              </li>
+            <Link
+              className="itemsCenter flex-col gap-2 cursor-pointer min-w-[150px]"
+              key={category.name}
+              to={`/product/category/${category.name}`}
+            >
+              <img className="rounded-md" src={category.img} alt="" />
+              <p className="text-sm">{category.name}</p>
             </Link>
           ))}
         </ul>
@@ -56,20 +55,18 @@ const Product = () => {
         <ul className="innerSlider flxCenter gap-4 ">
           {popularProducts?.length &&
             popularProducts.map((product) => (
-              <Link key={product.title}>
-                <li
-                  className="max-h-[400px] aspect-w-10 aspect-h-15 itemsCenter flex-col gap-2 cursor-pointer bg-black/[0.026] w-[30vw] max-w-[300px] rounded-lg min-w-[200px]"
-                  key={product.title}
-                >
-                  <img
-                    className="relative h-[60%]"
-                    src={product.images[0]}
-                    alt=""
-                  />
-                  <p className="relative pt-4 text-sm h-[40%] w-[100%] bg-black/[0.05]">
-                    {product.title}
-                  </p>
-                </li>
+              <Link
+                className="max-h-[400px] aspect-w-10 aspect-h-15 itemsCenter flex-col gap-2 cursor-pointer w-[30vw] max-w-[300px] rounded-lg min-w-[200px]"
+                key={product.title}
+              >
+                <img
+                  className="relative h-[60%]"
+                  src={product.images[0]}
+                  alt=""
+                />
+                <p className="relative pt-4 text-sm h-[40%] w-[100%] underline ">
+                  {product.title}
+                </p>
               </Link>
             ))}
         </ul>
@@ -79,17 +76,17 @@ const Product = () => {
         <ul className="innerSlider flxCenter gap-4 ">
           {bigBrands?.length &&
             bigBrands.map((brand) => (
-              <Link key={brand.name}>
-                <li
-                  className="max-h-[400px] itemsCenter flex-col gap-2 cursor-pointer bg-black/[0.026] w-[30vw] max-w-[300px] rounded-lg min-w-[200px]"
-                  key={brand.name}
-                >
-                  <img className="relative h-[60%]" src={brand.img} alt="" />
-                  <p className="relative pt-4 text-sm h-[40%] w-[100%] bg-black/[0.05]">
+              <Link
+                className="max-h-[400px] itemsCenter flex-col gap-2 cursor-pointer bg-black/[0.026] w-[30vw] max-w-[300px] rounded-lg min-w-[200px] overflow-hidden"
+                key={brand.name}
+              >
+                <img className="relative h-[60%] " src={brand.img} alt="" />
+                <div className="bg-black/[0.05] p-4">
+                  <p className="relative pt-4 text-sm h-[40%] w-[100%] ">
                     {brand.name}
                   </p>
-                  <p className="text-red-500">{brand.content}</p>
-                </li>
+                  <p className="text-red-500 text-sm mt-3">{brand.content}</p>
+                </div>
               </Link>
             ))}
         </ul>

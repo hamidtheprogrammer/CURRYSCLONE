@@ -69,3 +69,7 @@ body {
 img {
   object-fit: cover;
 }
+
+i {
+  cursor: pointer;
+}

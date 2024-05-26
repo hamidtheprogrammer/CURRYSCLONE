@@ -54,13 +54,13 @@ export const bigBrands = [
     name: "Samsung",
     img: "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     link: "##",
-    content: "save 50% now on eligible Samsung products",
+    content: "save $20 on all orders above $100",
   },
   {
     name: "Nike",
     img: "https://images.unsplash.com/photo-1622831617330-bc799d6236b4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     link: "##",
-    content: "save 50% now on eligible Nike products",
+    content: "save 20% now on all Nike products",
   },
 ];
 

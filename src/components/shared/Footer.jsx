@@ -19,8 +19,8 @@ const Footer = () => {
             key={service.name}
             className="itemsCenter flex-col cursor-pointer"
           >
-            <i className="text-2xl">{service.icon}</i>
-            <p className="text-sm">{service.name}</p>
+            <span className="text-2xl">{service.icon}</span>
+            <p className="text-sm text-center text-balance">{service.name}</p>
           </div>
         ))}
       </div>
@@ -41,10 +41,10 @@ const Footer = () => {
         ))}
       </div>
       <aside className="w-[100%] flxCenter gap-6 text-2xl mt-16">
-        <i className="fa-brands fa-youtube">Y</i>
-        <i className="fa-brands fa-twitter">T</i>
-        <i className="fa-brands fa-instagram">I</i>
-        <i className="fa-brands fa-facebook">F</i>
+        <i className="fa-brands fa-youtube"></i>
+        <i className="fa-brands fa-twitter"></i>
+        <i className="fa-brands fa-instagram"></i>
+        <i className="fa-brands fa-facebook"></i>
       </aside>
       <footer className="flxCenter text-xs text-black/70   mt-10 w-[100%} ">
         <p className="max-w-[300px] text-center">
